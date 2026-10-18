@@ -23,3 +23,5 @@ body[data-theme="dark"] .blog-date,body[data-theme="dark"] .blog-card p,body[dat
 }
 @media(max-width:520px){.page-content .blog-card{grid-template-columns:112px minmax(0,1fr);column-gap:14px;min-height:94px}.page-content .blog-card h3{font-size:14px}.page-content .blog-card p{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.copy-email .email-check{display:none}.copy-email.is-copied .email-envelope{display:none}.copy-email.is-copied .email-check{display:block}

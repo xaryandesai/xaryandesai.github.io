@@ -66,11 +66,14 @@
   let reset;
   email?.addEventListener('click', async () => {
     clearTimeout(reset);
+    email.classList.remove('is-copied');
     try {
       await navigator.clipboard.writeText(email.dataset.email);
+      email.classList.toggle('is-copied', true);
       email.setAttribute('aria-label', 'Email copied');
       if (status) status.textContent = 'Email address copied.';
       reset = setTimeout(() => {
+        email.classList.remove('is-copied');
         email.setAttribute('aria-label', 'Copy email address');
         if (status) status.textContent = '';
       }, 1500);

@@ -153,7 +153,9 @@ class Renderer:
             if not value:
                 result.append(f'<button type="button" disabled aria-label="{label} not configured" title="{label} not configured">{ICONS[kind]}</button>')
             elif kind == 'email':
-                result.append(f'<button class="copy-email" type="button" data-email="{escape(value)}" aria-label="Copy email address">{ICONS[kind]}</button>')
+                envelope = ICONS[kind].replace('<svg ', '<svg class="email-envelope" ', 1)
+                check = '<svg class="email-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+                result.append(f'<button class="copy-email" type="button" data-email="{escape(value)}" aria-label="Copy email address">{envelope}{check}</button>')
             else:
                 result.append(f'<a href="{escape(value)}" target="_blank" rel="noopener noreferrer" aria-label="{label}">{ICONS[kind]}</a>')
         return '<div class="author-links">' + ''.join(result) + '</div><span class="sr-only" id="copy-status" role="status" aria-live="polite"></span>'
