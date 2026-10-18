@@ -182,6 +182,7 @@ class Renderer:
         return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(document_title)}</title>{metadata}
+<link rel="icon" type="image/svg+xml" href="{self.path('/assets/img/favicon.svg')}">
 <link rel="stylesheet" href="{self.path('/assets/css/style.css')}"><link rel="stylesheet" href="{self.path('/assets/css/template.css')}">
 <link rel="alternate" type="application/atom+xml" href="{self.path('/feed.xml')}" title="{name}"></head>
 <body class="notransition"><script>try{{if(localStorage.getItem('theme')==='dark')document.body.dataset.theme='dark'}}catch{{}}</script>
