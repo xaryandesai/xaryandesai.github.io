@@ -21,7 +21,7 @@ SUN = '<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 MOON = '<svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.1A8.7 8.7 0 0 1 9.9 3.5 8.8 8.8 0 1 0 20.5 14.1Z"/></svg>'
 ICONS = {
     'x': '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M18.9 1.2h3.7l-8 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9ZM17.6 20.6h2L6.5 3.2H4.3Z"/></svg>',
-    'linkedin': '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M5 8H1v15h4ZM3 1a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM23 14c0-4-2-6-5-6-2 0-3 1-4 2V8h-4v15h4v-8c0-2 1-3 3-3s2 1 2 3v8h4Z"/></svg>',
+    'linkedin': '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" stroke="none" d="M2 0h20a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2ZM4 9h3.5v11H4Zm1.75-5.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8ZM10 9h3.4v1.5c.7-1.1 1.8-1.8 3.4-1.8 3.1 0 4.2 2 4.2 5V20h-3.5v-5.7c0-1.6-.4-2.6-1.9-2.6s-2.2 1.1-2.2 2.6V20H10Z"/></svg>',
     'email': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>',
 }
 
