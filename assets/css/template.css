@@ -25,3 +25,10 @@ body[data-theme="dark"] .blog-date,body[data-theme="dark"] .blog-card p,body[dat
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .copy-email .email-check{display:none}.copy-email.is-copied .email-envelope{display:none}.copy-email.is-copied .email-check{display:block}
+
+/* Article source attribution and ticket examples. */
+.post .article-body .article-source-caption{padding:0;margin:-16px 0 14px;font-size:12px;line-height:1.6;text-align:center;color:#6b7886}
+.post .article-body blockquote{padding:4px 0 4px 20px;margin:16px 0;border:0;border-left:2px solid #dfe2e6;text-align:left;font-style:normal;color:inherit}
+.post .article-body blockquote p{padding:8px 0;margin:0}
+body[data-theme="dark"] .post .article-body .article-source-caption{color:#a6aab4}
+body[data-theme="dark"] .post .article-body blockquote{border-left-color:#41454f}
